@@ -1,0 +1,26 @@
+姓名: Android CI
+
+在……之上：:
+推：:
+分支机构：["main"]: [ "主要" ]
+pull_request：:
+分支机构：["main"]: [ "主要" ]
+
+作业：:
+建立：:
+
+run-on:ubuntu-latest: Ubuntu-最新
+
+步骤：:
+-使用：操作/结帐@v4uses: 操作/结帐@v4
+-名称：设置JDK11name: 设置JDK11
+用法：操作/setup-java@v4: 操作/设置-Java@v4
+和……一起：:
+现在的 java版本: '11'
+分布: 的
+缓存: Gradle
+
+    - 姓名: Grant execute permission for gradlew
+      run: chmod +x gradlew
+    - 姓名: Build with Gradle
+      run: ./gradlew build
